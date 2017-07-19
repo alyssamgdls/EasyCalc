@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alyssa.magdales.com.easycalc.MainActivity">
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/edit_text_1"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number1"
+        android:layout_margin="10dp"
+        android:hint="@string/edit_text_2"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#eeeeee"
+        android:padding="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblAdd"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblSubtract"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblClear"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/times"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblMultiply"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblDivide"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/lblExit"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

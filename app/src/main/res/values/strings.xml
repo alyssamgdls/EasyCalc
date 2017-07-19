@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Easy Calc</string>
+    <string name="edit_text_1">Enter 1st Number</string>
+    <string name="edit_text_2">Enter 2nd Number</string>
+    <string name="txtResult">0</string>
+    <string name="lblAdd">+</string>
+    <string name="lblSubtract">-</string>
+    <string name="lblMultiply">*</string>
+    <string name="lblDivide">/</string>
+    <string name="lblClear">C</string>
+    <string name="lblExit">EXIT</string>
+</resources>
